@@ -113,7 +113,7 @@
   "terms": {
     "title": "Términos y Condiciones",
     "subtitle": "Términos de Colaboración Pagada - SouthTropic PR",
-    "term1": "El contenido se entregará en 8-15 días o menos. Puede variar según el contenido y la carga de trabajo.",
+    "term1": "El contenido se entregará en 8-15 días o menos. Puede variar según el contenido y la carga de trabajo.",  
     "term2": "El contenido se entregará a través de Google Drive u otro enlace privado y seguro.",
     "term3": "Se emitirá una factura como comprobante de compra y para asegurar la fecha.",
     "term4": "Se requiere un depósito del 35% para asegurar la fecha o cualquier cambio. (No reembolsable)",
@@ -122,6 +122,10 @@
     "contactText": "Para consultas sobre colaboraciones o para discutir tu proyecto, no dudes en comunicarte",
     "email": "email",
     "contactFormButton": "Formulario de Contacto"
+  },
+  "footer": {
+    "designedBy": "Diseñado por",
+    "iconBy": "icono por"
   }
 }
 

@@ -9,7 +9,7 @@ function AboutPage() {
   const { t } = useTranslation()
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white pb-20">
       <link rel="preload" as="image" href="/images/about/me.webp" type="image/webp" fetchPriority="high" />
       <link rel="preload" as="image" href="/images/about/me.jpg" fetchPriority="high" />
       
@@ -40,9 +40,9 @@ function AboutPage() {
             </p>
              <p className="text-lg text-white/80 leading-relaxed">
               {t('about.paragraph3')}{' '}
-              <Link to="/services" className="text-white/80 hover:text-white transition-colors underline">
+              <a href="/services#contact-form" className="text-white/80 hover:text-white transition-colors underline">
                 {t('about.contactForm')}
-              </Link>{' '}
+              </a>{' '}
               {t('about.orReachOut')}{' '}
               <a href="https://www.instagram.com/southtropic_pr/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors underline">
                 {t('about.instagram')}

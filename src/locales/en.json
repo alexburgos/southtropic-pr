@@ -122,6 +122,10 @@
     "contactText": "For inquiries about collaborations or to discuss your project, feel free to reach out",
     "email": "email",
     "contactFormButton": "Contact Form"
+  },
+  "footer": {
+    "designedBy": "Designed by",
+    "iconBy": "icon by"
   }
 }
 

@@ -1,13 +1,23 @@
 import { Link, useLocation } from '@tanstack/react-router'
 import { Menu, X } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { InstagramIcon } from './InstagramIcon'
 
 export function Navigation() {
   const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
   const location = useLocation()
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const navLinks = [
     { to: '/about', label: t('nav.about') },
@@ -16,8 +26,26 @@ export function Navigation() {
     { to: '/terms', label: t('nav.terms') },
   ]
 
+
+  const getNavClasses = () => {
+    const baseClasses = 'fixed top-0 left-0 right-0 z-50 py-2 px-4 transition-all duration-300'
+    
+    const shouldBlur = isScrolled || isOpen
+    const blurClasses = 'bg-black/70 backdrop-blur-md'
+    
+    if (location.pathname === '/') {
+      return isOpen ? `${baseClasses} ${blurClasses}` : baseClasses
+    }
+    
+    if (shouldBlur) {
+      return `${baseClasses} ${blurClasses}`
+    }
+    
+    return baseClasses
+  }
+
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 py-2 px-4 ${location.pathname !== '/' ? 'md:bg-transparent md:backdrop-blur-none bg-black/70 backdrop-blur-md' : ''}`}>
+    <nav className={getNavClasses()}>
       <div className="flex items-center justify-between h-10">
         <div className="flex justify-start items-center gap-2 flex-1">
           {location.pathname !== '/' && (

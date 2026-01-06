@@ -64,7 +64,7 @@ function GalleryPage() {
   }, [selectedImage])
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white py-20">
       <div className="max-w-7xl mx-auto px-6 py-20">
         <link rel="preload" as="image" href={galleryImages[0].webp} type="image/webp" fetchPriority="high" />
         <link rel="preload" as="image" href={galleryImages[0].jpg} fetchPriority="high" />

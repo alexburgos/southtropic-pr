@@ -9,7 +9,7 @@ function TermsPage() {
   const { t } = useTranslation()
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white py-20">
       <div className="max-w-4xl mx-auto px-6 py-20">
         <h1 className="text-4xl md:text-5xl font-bold mb-8">{t('terms.title')}</h1>
         

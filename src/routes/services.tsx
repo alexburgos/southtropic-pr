@@ -35,7 +35,7 @@ function ServicesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white pb-20">
       <link rel="preload" as="image" href="/images/services/overview.webp" type="image/webp" fetchPriority="high" />
       <link rel="preload" as="image" href="/images/services/overview.jpg" fetchPriority="high" />
       
