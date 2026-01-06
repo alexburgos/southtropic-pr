@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "gallery": "Gallery"
+  },
+  "home": {
+    "title": "SouthTropic",
+    "subtitle": "Where visual stories meet world-class stays",
+    "cta": {
+      "services": "Explore our services",
+      "gallery": "View our work"
+    }
+  },
+  "about": {
+    "paragraph1": "My name is Axel, born and raised in Puerto Rico. I am a content creator with over 6 years of experience, specializing in collaborations with hotels and Airbnb properties. I take pride in working with some of the most prominent accommodations across Puerto Rico and across the globe.",
+    "paragraph2": "My content philosophy is rooted in the art of storytelling, capturing the most striking imagery of each property to promote tourism and inspire travelers. I produce high-quality photography and videography that goes beyond showcasing spaces; I aim to humanize the unique experiences offered to both regional and international audiences. For me, this work transcends a typical job, it is my passion. I approach every project with unwavering dedication, and that commitment is consistently reflected in the final result.",
+    "paragraph3": "If you want to work together and want to showcase your properties, please use the",
+    "contactForm": "contact form",
+    "orReachOut": "or reach out via",
+    "instagram": "Instagram"
+  },
+  "services": {
+    "whatIOffer": "What I Offer",
+    "servicesList": {
+      "item1": "Personalized hotel/Airbnb quotes",
+      "item2": "Photography and video service quotes without stay (Day Pass)",
+      "item3": "Full HD 4K videos with basic editing",
+      "item4": "Hotel and Airbnb promotion on social media",
+      "item5": "Active on TikTok, Instagram, Facebook and YouTube Shorts",
+      "item6": "Storytelling Reels and Voiceovers",
+      "item7": "Annual offers available"
+    },
+    "contentPackages": "Content Packages",
+    "packages": {
+      "droneVisuals": {
+        "title": "Drone Visuals",
+        "features": {
+          "item1": "8 Drone Photos",
+          "item2": "10-second Reel with aerial visuals (Instagram)",
+          "item3": "1 Carousel Post",
+          "item4": "10-12 second Reel for TikTok and Instagram",
+          "item5": "4 Stories per day of collaboration"
+        }
+      },
+      "basic": {
+        "title": "Basic Package",
+        "features": {
+          "item1": "15 professional photos with camera and drone",
+          "item2": "Lifestyle Reel with models or couple (subject to discussion)",
+          "item3": "Real Estate Reel",
+          "item4": "5 promotional stories per day",
+          "item5": "3 mini clips for promotion",
+          "item6": "1 carousel post (permanent)"
+        }
+      },
+      "full": {
+        "title": "Full Package",
+        "features": {
+          "item1": "30 professional photos with camera and drone",
+          "item2": "30-second professional video in 4K HD",
+          "item3": "1 Lifestyle Reel (8-12 seconds)",
+          "item4": "1 Real Estate Reel for commercial use",
+          "item5": "$15 boost for reel/carousel",
+          "item6": "10-second Reel for YouTube Shorts and TikTok"
+        }
+      },
+      "gold": {
+        "title": "Gold Package",
+        "features": {
+          "item1": "40 professional photos (camera and drone)",
+          "item2": "1-minute professional video in 4K HD",
+          "item3": "Voice Over Tour Reel (40 seconds)",
+          "item4": "$20 Boost for reel/carousel",
+          "item5": "10-second Reel for YouTube Shorts and TikTok",
+          "item6": "Unlimited promotion (posts, stories, recaps)"
+        }
+      },
+      "annual": {
+        "title": "Annual Agreement",
+        "badge": "SAVE $200",
+        "features": {
+          "item1": "3 annual visits to create exclusive content",
+          "item2": "15 professional photos and 2 reels per visit",
+          "item3": "Content delivered via Google Drive or secure link",
+          "item4": "Invoice provided as proof of purchase",
+          "item5": "30% deposit required to secure date (non-refundable)",
+          "item6": "Regular price: $1,750"
+        }
+      }
+    },
+    "getInTouch": "Get in Touch",
+    "getInTouchSubtitle": "Ready to work together? Let's start a conversation.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "submit": "Send Message",
+      "sending": "Sending..."
+    }
+  },
+  "gallery": {
+    "imageAlt": "Gallery image {{number}}",
+    "imageCounter": "{{current}} / {{total}}"
+  }
+}
+

@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "services": "Servicios",
+    "gallery": "Galería"
+  },
+  "home": {
+    "title": "SouthTropic",
+    "subtitle": "Donde las historias visuales se encuentran con estadías de clase mundial",
+    "cta": {
+      "services": "Explora nuestros servicios",
+      "gallery": "Ver nuestro trabajo"
+    }
+  },
+  "about": {
+    "paragraph1": "Mi nombre es Axel, nacido y criado en Puerto Rico. Soy creador de contenido con más de 6 años de experiencia, especializado en colaboraciones con hoteles y propiedades de Airbnb. Me enorgullece trabajar con algunos de los alojamientos más destacados de Puerto Rico y de todo el mundo.",
+    "paragraph2": "Mi filosofía de contenido se basa en el arte de contar historias, capturando las imágenes más impactantes de cada propiedad para promover el turismo e inspirar a los viajeros. Produzco fotografía y videografía de alta calidad que va más allá de mostrar espacios; mi objetivo es humanizar las experiencias únicas que se ofrecen tanto a audiencias regionales como internacionales. Para mí, este trabajo trasciende un trabajo típico, es mi pasión. Abordo cada proyecto con dedicación inquebrantable, y ese compromiso se refleja constantemente en el resultado final.",
+    "paragraph3": "Si quieres trabajar conmigo y mostrar tus propiedades, por favor usa el",
+    "contactForm": "formulario de contacto",
+    "orReachOut": "o contáctame vía",
+    "instagram": "Instagram"
+  },
+  "services": {
+    "whatIOffer": "Lo Que Ofrezco",
+    "servicesList": {
+      "item1": "Cotizaciones personalizadas de hotel/Airbnb",
+      "item2": "Cotizaciones de servicio fotográfico y de video sin estadía (Day Pass)",
+      "item3": "Videos Full HD 4K con edición básica",
+      "item4": "Promoción de hotelería y Airbnb en redes sociales",
+      "item5": "Activo en TikTok, Instagram, Facebook y YouTube Shorts",
+      "item6": "Storytelling Reels y Voiceovers",
+      "item7": "Ofertas anuales disponibles"
+    },
+    "contentPackages": "Paquetes de Contenido",
+    "packages": {
+      "droneVisuals": {
+        "title": "Visuales con Drone",
+        "features": {
+          "item1": "8 Fotos con Drone",
+          "item2": "Reel de 10 segundos con visuales aéreos (Instagram)",
+          "item3": "1 Publicación Carrusel",
+          "item4": "Reel de 10-12 segundos para TikTok e Instagram",
+          "item5": "4 Historias por día de colaboración"
+        }
+      },
+      "basic": {
+        "title": "Paquete Básico",
+        "features": {
+          "item1": "15 fotos profesionales con cámara y drone",
+          "item2": "Reel Lifestyle con modelos o pareja (sujeto a discusión)",
+          "item3": "Reel de Bienes Raíces",
+          "item4": "5 historias promocionales por día",
+          "item5": "3 mini clips para promoción",
+          "item6": "1 publicación carrusel (permanente)"
+        }
+      },
+      "full": {
+        "title": "Paquete Completo",
+        "features": {
+          "item1": "30 fotos profesionales con cámara y drone",
+          "item2": "Video profesional de 30 segundos en 4K HD",
+          "item3": "1 Reel Lifestyle (8-12 segundos)",
+          "item4": "1 Reel de Bienes Raíces para uso comercial",
+          "item5": "$15 impulso para reel/carrusel",
+          "item6": "Reel de 10 segundos para YouTube Shorts y TikTok"
+        }
+      },
+      "gold": {
+        "title": "Paquete Oro",
+        "features": {
+          "item1": "40 fotos profesionales (cámara y drone)",
+          "item2": "Video profesional de 1 minuto en 4K HD",
+          "item3": "Reel Tour con Voice Over (40 segundos)",
+          "item4": "$20 Impulso para reel/carrusel",
+          "item5": "Reel de 10 segundos para YouTube Shorts y TikTok",
+          "item6": "Promoción ilimitada (publicaciones, historias, recaps)"
+        }
+      },
+      "annual": {
+        "title": "Acuerdo Anual",
+        "badge": "AHORRA $200",
+        "features": {
+          "item1": "3 visitas anuales para crear contenido exclusivo",
+          "item2": "15 fotos profesionales y 2 reels por visita",
+          "item3": "Contenido entregado vía Google Drive o enlace seguro",
+          "item4": "Factura proporcionada como comprobante de compra",
+          "item5": "Se requiere depósito del 30% para asegurar fecha (no reembolsable)",
+          "item6": "Precio regular: $1,750"
+        }
+      }
+    },
+    "getInTouch": "Contáctame",
+    "getInTouchSubtitle": "¿Listo para trabajar juntos? Iniciemos una conversación.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando..."
+    }
+  },
+  "gallery": {
+    "imageAlt": "Imagen de galería {{number}}",
+    "imageCounter": "{{current}} / {{total}}"
+  }
+}
+
