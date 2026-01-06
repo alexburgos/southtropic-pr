@@ -3,20 +3,21 @@
     "home": "Inicio",
     "about": "Acerca",
     "services": "Servicios",
-    "gallery": "Galería"
+    "gallery": "Galería",
+    "terms": "Términos"
   },
   "home": {
     "title": "SouthTropic",
     "subtitle": "Donde las historias visuales se encuentran con estadías de clase mundial",
     "cta": {
-      "services": "Explora nuestros servicios",
-      "gallery": "Ver nuestro trabajo"
+      "services": "Explora mis servicios",
+      "gallery": "Ver mi trabajo"
     }
   },
   "about": {
     "paragraph1": "Mi nombre es Axel, nacido y criado en Puerto Rico. Soy creador de contenido con más de 6 años de experiencia, especializado en colaboraciones con hoteles y propiedades de Airbnb. Me enorgullece trabajar con algunos de los alojamientos más destacados de Puerto Rico y de todo el mundo.",
     "paragraph2": "Mi filosofía de contenido se basa en el arte de contar historias, capturando las imágenes más impactantes de cada propiedad para promover el turismo e inspirar a los viajeros. Produzco fotografía y videografía de alta calidad que va más allá de mostrar espacios; mi objetivo es humanizar las experiencias únicas que se ofrecen tanto a audiencias regionales como internacionales. Para mí, este trabajo trasciende un trabajo típico, es mi pasión. Abordo cada proyecto con dedicación inquebrantable, y ese compromiso se refleja constantemente en el resultado final.",
-    "paragraph3": "Si quieres trabajar conmigo y mostrar tus propiedades, por favor usa el",
+    "paragraph3": "Si quieres trabajar conmigo y destacar tus propiedades, por favor usa el",
     "contactForm": "formulario de contacto",
     "orReachOut": "o contáctame vía",
     "instagram": "Instagram"
@@ -91,7 +92,9 @@
       }
     },
     "getInTouch": "Contáctame",
-    "getInTouchSubtitle": "¿Listo para trabajar juntos? Iniciemos una conversación.",
+    "getInTouchSubtitle": "¿Listo para trabajar juntos?",
+    "termsNote": "Al enviar, aceptas nuestros",
+    "termsLink": "Términos y Condiciones",
     "form": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
@@ -106,6 +109,19 @@
   "gallery": {
     "imageAlt": "Imagen de galería {{number}}",
     "imageCounter": "{{current}} / {{total}}"
+  },
+  "terms": {
+    "title": "Términos y Condiciones",
+    "subtitle": "Términos de Colaboración Pagada - SouthTropic PR",
+    "term1": "El contenido se entregará en 8-15 días o menos. Puede variar según el contenido y la carga de trabajo.",
+    "term2": "El contenido se entregará a través de Google Drive u otro enlace privado y seguro.",
+    "term3": "Se emitirá una factura como comprobante de compra y para asegurar la fecha.",
+    "term4": "Se requiere un depósito del 35% para asegurar la fecha o cualquier cambio. (No reembolsable)",
+    "term5": "El contenido se entregará una vez que se complete el pago total.",
+    "contactTitle": "¿Preguntas?",
+    "contactText": "Para consultas sobre colaboraciones o para discutir tu proyecto, no dudes en comunicarte",
+    "email": "email",
+    "contactFormButton": "Formulario de Contacto"
   }
 }
 

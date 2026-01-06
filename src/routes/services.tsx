@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, Link } from '@tanstack/react-router'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import type { FormEvent } from 'react'
@@ -106,7 +106,7 @@ function ServicesPage() {
           </div>
         </div>
 
-        <div className="max-w-3xl mx-auto  pt-12">
+        <div id="contact-form" className="max-w-3xl mx-auto  pt-12 scroll-mt-20">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">{t('services.getInTouch')}</h2>
             <p className="text-white/70 text-lg">
@@ -168,6 +168,13 @@ function ServicesPage() {
               {isSubmitting ? t('services.form.sending') : t('services.form.submit')}
             </button>
           </form>
+
+          <div className="mt-8 text-center text-sm text-white/60">
+            {t('services.termsNote')}{' '}
+            <Link to="/terms" className="text-white/80 hover:text-white transition-colors underline">
+              {t('services.termsLink')}
+            </Link>
+          </div>
         </div>
       </div>
     </div>

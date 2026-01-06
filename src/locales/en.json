@@ -3,14 +3,15 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "gallery": "Gallery"
+    "gallery": "Gallery",
+    "terms": "Terms"
   },
   "home": {
     "title": "SouthTropic",
     "subtitle": "Where visual stories meet world-class stays",
     "cta": {
-      "services": "Explore our services",
-      "gallery": "View our work"
+      "services": "Explore my services",
+      "gallery": "View my work"
     }
   },
   "about": {
@@ -91,7 +92,9 @@
       }
     },
     "getInTouch": "Get in Touch",
-    "getInTouchSubtitle": "Ready to work together? Let's start a conversation.",
+    "getInTouchSubtitle": "Ready to work together?",
+    "termsNote": "By submitting, you agree to our",
+    "termsLink": "Terms & Conditions",
     "form": {
       "name": "Name",
       "namePlaceholder": "Your name",
@@ -106,6 +109,19 @@
   "gallery": {
     "imageAlt": "Gallery image {{number}}",
     "imageCounter": "{{current}} / {{total}}"
+  },
+  "terms": {
+    "title": "Terms & Conditions",
+    "subtitle": "Paid Collaboration Terms - SouthTropic PR",
+    "term1": "Content will be delivered in 8-15 days or less. May vary by content and workload.",
+    "term2": "Content will be delivered via Google Drive or other private and secure link.",
+    "term3": "An invoice will be issued as proof of purchase and to secure the date.",
+    "term4": "A 35% deposit is required to secure the date or any changes. (Non-refundable)",
+    "term5": "Content will be delivered once the full payment is completed.",
+    "contactTitle": "Questions?",
+    "contactText": "For inquiries about collaborations or to discuss your project, feel free to reach out",
+    "email": "email",
+    "contactFormButton": "Contact Form"
   }
 }
 

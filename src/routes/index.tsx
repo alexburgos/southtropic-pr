@@ -12,6 +12,8 @@ const backgroundVideos = [
   '/videos/background-3.mp4',
   '/videos/background-4.mp4',
   '/videos/background-5.mp4',
+  '/videos/background-6.mp4',
+  '/videos/background-7.mp4',
 ]
 
 function HomePage() {
