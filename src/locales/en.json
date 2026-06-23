@@ -98,6 +98,39 @@
         "detail": "This prevents collaborations with direct local competitors during the exclusivity term and allows your property to maintain priority positioning across my hospitality content."
       }
     },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": {
+        "q1": {
+          "question": "What types of properties do you work with?",
+          "answer": "I specialize in collaborations with hotels, Airbnbs, vacation rentals, and luxury resorts across Puerto Rico and the Caribbean."
+        },
+        "q2": {
+          "question": "How long does content delivery take?",
+          "answer": "Content is typically delivered within 8–15 days after the shoot. Delivery time may vary based on content complexity and current workload."
+        },
+        "q3": {
+          "question": "What platforms will my content be posted on?",
+          "answer": "Depending on your package, content is distributed across Instagram, TikTok, Facebook, and YouTube Shorts — including reels, stories, and carousel posts."
+        },
+        "q4": {
+          "question": "Is a deposit required to book?",
+          "answer": "Yes, a 30% non-refundable deposit is required to secure your date. Full payment is due before content is delivered."
+        },
+        "q5": {
+          "question": "Do you offer an annual package?",
+          "answer": "Yes. The Annual Agreement ($2,000) includes 3 property visits per year, 15 professional photos, 2 reels, and 1 carousel per visit, plus unlimited promotion and VIP access to Airbnb recap reels."
+        },
+        "q6": {
+          "question": "What is the Local Exclusivity Add-On?",
+          "answer": "The Local Exclusivity Add-On ($3,000) is a 6-month exclusivity option that prevents collaborations with direct local competitors in the same market area, giving your property priority positioning across all SouthTropic content."
+        },
+        "q7": {
+          "question": "Do you work outside of Puerto Rico?",
+          "answer": "Yes. While based in Puerto Rico, collaborations are available with properties across the Caribbean and beyond."
+        }
+      }
+    },
     "getInTouch": "Get in Touch",
     "getInTouchSubtitle": "Ready to work together?",
     "termsNote": "By submitting, you agree to our",

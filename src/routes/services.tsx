@@ -68,6 +68,71 @@ const serviceJsonLd = {
   ],
 }
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What types of properties do you work with?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'I specialize in collaborations with hotels, Airbnbs, vacation rentals, and luxury resorts across Puerto Rico and the Caribbean.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long does content delivery take?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Content is typically delivered within 8–15 days after the shoot. Delivery time may vary based on content complexity and current workload.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What platforms will my content be posted on?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Depending on your package, content is distributed across Instagram, TikTok, Facebook, and YouTube Shorts — including reels, stories, and carousel posts.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is a deposit required to book?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, a 30% non-refundable deposit is required to secure your date. Full payment is due before content is delivered.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you offer an annual package?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. The Annual Agreement ($2,000) includes 3 property visits per year, 15 professional photos, 2 reels, and 1 carousel per visit, plus unlimited promotion and VIP access to Airbnb recap reels.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the Local Exclusivity Add-On?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The Local Exclusivity Add-On ($3,000) is a 6-month exclusivity option that prevents collaborations with direct local competitors in the same market area, giving your property priority positioning across all SouthTropic content.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you work outside of Puerto Rico?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. While based in Puerto Rico, collaborations are available with properties across the Caribbean and beyond.',
+      },
+    },
+  ],
+}
+
+const FAQ_KEYS = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7'] as const
+
 const FEATURE_KEYS = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6', 'item7'] as const
 
 const PACKAGES = [
@@ -110,6 +175,10 @@ export const Route = createFileRoute('/services')({
         type: 'application/ld+json',
         children: JSON.stringify(serviceJsonLd),
       },
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify(faqJsonLd),
+      },
     ],
   }),
   component: ServicesPage,
@@ -123,6 +192,7 @@ function ServicesPage() {
     message: '',
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
@@ -240,6 +310,34 @@ function ServicesPage() {
               <p>{t('services.addons.localExclusivity.description')}</p>
               <p>{t('services.addons.localExclusivity.detail')}</p>
             </div>
+          </div>
+        </div>
+
+        <div className="mb-20 max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center">{t('services.faq.title')}</h2>
+          <div className="divide-y divide-white/10">
+            {FAQ_KEYS.map((key, i) => (
+              <div key={key}>
+                <button
+                  type="button"
+                  className="w-full flex justify-between items-center py-5 text-left gap-4"
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                  aria-expanded={openFaq === i}
+                >
+                  <span className="font-medium text-white">
+                    {t(`services.faq.items.${key}.question`)}
+                  </span>
+                  <span className="text-white/40 text-xl leading-none shrink-0">
+                    {openFaq === i ? '−' : '+'}
+                  </span>
+                </button>
+                {openFaq === i && (
+                  <p className="pb-5 text-white/60 text-sm leading-relaxed">
+                    {t(`services.faq.items.${key}.answer`)}
+                  </p>
+                )}
+              </div>
+            ))}
           </div>
         </div>
 

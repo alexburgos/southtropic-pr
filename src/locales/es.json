@@ -98,6 +98,39 @@
         "detail": "Esto evita colaboraciones con competidores locales directos durante el período de exclusividad y permite que tu propiedad mantenga una posición prioritaria en todo mi contenido de hospitalidad."
       }
     },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "items": {
+        "q1": {
+          "question": "¿Con qué tipos de propiedades trabajas?",
+          "answer": "Me especializo en colaboraciones con hoteles, Airbnbs, alquileres vacacionales y resorts de lujo en Puerto Rico y el Caribe."
+        },
+        "q2": {
+          "question": "¿Cuánto tiempo tarda la entrega del contenido?",
+          "answer": "El contenido se entrega en un plazo de 8 a 15 días después de la sesión. El tiempo puede variar según la complejidad del contenido y la carga de trabajo actual."
+        },
+        "q3": {
+          "question": "¿En qué plataformas se publicará mi contenido?",
+          "answer": "Según el paquete, el contenido se distribuye en Instagram, TikTok, Facebook y YouTube Shorts — incluyendo reels, historias y publicaciones en carrusel."
+        },
+        "q4": {
+          "question": "¿Se requiere un depósito para reservar?",
+          "answer": "Sí, se requiere un depósito no reembolsable del 30% para asegurar la fecha. El pago completo se debe realizar antes de la entrega del contenido."
+        },
+        "q5": {
+          "question": "¿Ofreces un paquete anual?",
+          "answer": "Sí. El Acuerdo Anual ($2,000) incluye 3 visitas a tu propiedad por año, 15 fotos profesionales, 2 reels y 1 carrusel por visita, más promoción ilimitada y acceso VIP a reels de recaps de Airbnb."
+        },
+        "q6": {
+          "question": "¿Qué es el Complemento de Exclusividad Local?",
+          "answer": "El Complemento de Exclusividad Local ($3,000) es una opción de exclusividad de 6 meses que evita colaboraciones con competidores locales directos en la misma área de mercado, dando a tu propiedad prioridad en todo el contenido de SouthTropic."
+        },
+        "q7": {
+          "question": "¿Trabajas fuera de Puerto Rico?",
+          "answer": "Sí. Aunque con base en Puerto Rico, las colaboraciones están disponibles con propiedades en el Caribe y más allá."
+        }
+      }
+    },
     "getInTouch": "Contáctame",
     "getInTouchSubtitle": "¿Listo para trabajar juntos?",
     "termsNote": "Al enviar, aceptas nuestros",
