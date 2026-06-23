@@ -1,6 +1,6 @@
 import { Link, useLocation } from '@tanstack/react-router'
 import { Menu, X } from 'lucide-react'
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { InstagramIcon } from './InstagramIcon'
 
@@ -26,21 +26,20 @@ export function Navigation() {
     { to: '/terms', label: t('nav.terms') },
   ]
 
-
   const getNavClasses = () => {
     const baseClasses = 'fixed top-0 left-0 right-0 z-50 py-2 px-4 transition-all duration-300'
-    
+
     const shouldBlur = isScrolled || isOpen
     const blurClasses = 'bg-black/70 backdrop-blur-md'
-    
+
     if (location.pathname === '/') {
       return isOpen ? `${baseClasses} ${blurClasses}` : baseClasses
     }
-    
+
     if (shouldBlur) {
       return `${baseClasses} ${blurClasses}`
     }
-    
+
     return baseClasses
   }
 
@@ -49,9 +48,12 @@ export function Navigation() {
       <div className="flex items-center justify-between h-10">
         <div className="flex justify-start items-center gap-2 flex-1">
           {location.pathname !== '/' && (
-              <Link to="/" className="text-white text-2xl font-bold tracking-wide hover:opacity-80 transition-opacity leading-none">
-                SouthTropic
-              </Link>
+            <Link
+              to="/"
+              className="text-white text-2xl font-bold tracking-wide hover:opacity-80 transition-opacity leading-none"
+            >
+              SouthTropic
+            </Link>
           )}
           <InstagramIcon />
         </div>
@@ -72,6 +74,7 @@ export function Navigation() {
         </div>
 
         <button
+          type="button"
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-white p-2"
           aria-label="Toggle menu"
@@ -102,4 +105,3 @@ export function Navigation() {
     </nav>
   )
 }
-

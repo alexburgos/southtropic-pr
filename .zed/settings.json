@@ -1,0 +1,28 @@
+{
+  "languages": {
+    "TypeScript": {
+      "language_servers": [
+        "typescript-language-server",
+        "!biome"
+      ]
+    },
+    "TSX": {
+      "language_servers": [
+        "typescript-language-server",
+        "!biome"
+      ]
+    },
+    "JavaScript": {
+      "language_servers": [
+        "typescript-language-server",
+        "!biome"
+      ]
+    },
+    "JSX": {
+      "language_servers": [
+        "typescript-language-server",
+        "!biome"
+      ]
+    }
+  }
+}

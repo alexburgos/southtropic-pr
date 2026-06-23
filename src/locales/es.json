@@ -38,57 +38,64 @@
       "droneVisuals": {
         "title": "Visuales con Drone",
         "features": {
-          "item1": "8 Fotos con Drone",
-          "item2": "Reel de 10 segundos con visuales aéreos (Instagram)",
-          "item3": "1 Publicación Carrusel",
-          "item4": "Reel de 10-12 segundos para TikTok e Instagram",
-          "item5": "4 Historias por día de colaboración"
+          "item1": "6 Fotos con Drone Editadas",
+          "item2": "Reel de 10 segundos con visuales aéreos (Instagram y TikTok)",
+          "item3": "3 Historias por día de colaboración"
         }
       },
       "basic": {
         "title": "Paquete Básico",
         "features": {
-          "item1": "15 fotos profesionales con cámara y drone",
-          "item2": "Reel Lifestyle con modelos o pareja (sujeto a discusión)",
-          "item3": "Reel de Bienes Raíces",
-          "item4": "5 historias promocionales por día",
-          "item5": "3 mini clips para promoción",
+          "item1": "12 fotos profesionales con cámara y drone",
+          "item2": "Reel Lifestyle con modelo (sujeto a discusión)",
+          "item3": "Reel Tour de Propiedad (TikTok)",
+          "item4": "4 historias promocionales por día",
+          "item5": "2 mini clips para promoción",
           "item6": "1 publicación carrusel (permanente)"
         }
       },
       "full": {
         "title": "Paquete Completo",
         "features": {
-          "item1": "30 fotos profesionales con cámara y drone",
-          "item2": "Video profesional de 30 segundos en 4K HD. (Para uso comercial)",
-          "item3": "1 Reel Lifestyle (15 segundos) publicado en todas mis plataformas.",
-          "item4": "1 Reel de Bienes Raíces publicado en Instagram.",
-          "item5": "$15 impulso para reel/carrusel.",
-          "item6": "Reel para YouTube Shorts y TikTok."
+          "item1": "20 fotos profesionales con cámara y drone (a discutir)",
+          "item2": "Video profesional de 30 segundos en 4K HD",
+          "item3": "$10 impulso en reel principal",
+          "item4": "2 reels en todas las plataformas: Instagram, YouTube Shorts y TikTok"
         }
       },
       "gold": {
         "title": "Paquete Oro",
         "features": {
-          "item1": "40 fotos profesionales (cámara y drone)",
-          "item2": "Video profesional de 1 minuto en 4K HD",
-          "item3": "Reel Tour con Voice Over (40 segundos)",
-          "item4": "$20 Impulso para reel/carrusel",
-          "item5": "Reel de 10 segundos para YouTube Shorts y TikTok",
-          "item6": "Promoción ilimitada (publicaciones, historias, recaps)"
+          "item1": "40 fotos profesionales con cámara y drone (a discutir)",
+          "item2": "Video Profesional de 30 segs. 4K HD",
+          "item3": "Reel Tour Narrando (40 segundos)",
+          "item4": "1 Lifestyle Reel de 8 a 12 segundos (Instagram Southtropic y Next Stop PR)",
+          "item5": "$20 Boost en reel/carrusel",
+          "item6": "Reel de 10 segundos en YouTube Shorts y TikTok",
+          "item7": "Promoción ilimitada (post, stories, recaps)"
         }
       },
       "annual": {
         "title": "Acuerdo Anual",
-        "badge": "AHORRA $200",
+        "badge": "AHORRAS $250",
         "features": {
-          "item1": "3 visitas anuales para crear contenido exclusivo",
-          "item2": "15 fotos profesionales y 2 reels por visita",
-          "item3": "Contenido entregado vía Google Drive o enlace seguro",
-          "item4": "Factura proporcionada como comprobante de compra",
-          "item5": "Se requiere depósito del 30% para asegurar fecha (no reembolsable)",
-          "item6": "Precio regular: $1,750"
+          "item1": "3 visitas a tu propiedad anualmente para crear contenido exclusivo para uso comercial",
+          "item2": "15 fotos profesionales, 2 reels, 1 carrusel por visita",
+          "item3": "Contenido entregado vía Google Drive u otro enlace privado y seguro",
+          "item4": "Factura como evidencia y para asegurar las fechas",
+          "item5": "Se requiere depósito del 30% para asegurar la fecha o cualquier cambio",
+          "item6": "Acceso VIP a reel de recaps de Airbnb y promoción ilimitada",
+          "item7": "Precio regular de este paquete: $2,250"
         }
+      }
+    },
+    "addons": {
+      "title": "Complementos",
+      "localExclusivity": {
+        "title": "Complemento de Exclusividad Local",
+        "feeLabel": "Tarifa de Exclusividad 6 Meses",
+        "description": "Una opción de exclusividad de 6 meses disponible para marcas de Airbnb, alquiler vacacional y hospitalidad dentro del mismo municipio o área de mercado local.",
+        "detail": "Esto evita colaboraciones con competidores locales directos durante el período de exclusividad y permite que tu propiedad mantenga una posición prioritaria en todo mi contenido de hospitalidad."
       }
     },
     "getInTouch": "Contáctame",
@@ -113,7 +120,7 @@
   "terms": {
     "title": "Términos y Condiciones",
     "subtitle": "Términos de Colaboración Pagada - SouthTropic PR",
-    "term1": "El contenido se entregará en 8-15 días o menos. Puede variar según el contenido y la carga de trabajo.",  
+    "term1": "El contenido se entregará en 8-15 días o menos. Puede variar según el contenido y la carga de trabajo.",
     "term2": "El contenido se entregará a través de Google Drive u otro enlace privado y seguro.",
     "term3": "Se emitirá una factura como comprobante de compra y para asegurar la fecha.",
     "term4": "Se requiere un depósito del 35% para asegurar la fecha o cualquier cambio. (No reembolsable)",
@@ -128,4 +135,3 @@
     "iconBy": "icono por"
   }
 }
-

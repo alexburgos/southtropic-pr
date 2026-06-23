@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+echo "Formatting source files..."
+pnpm exec oxfmt src/
+
+echo "Linting source files..."
+pnpm exec oxlint --fix src/
+
+# Re-stage any files that were auto-formatted or auto-fixed
+git add -u src/
+
+echo "Running final lint check..."
+pnpm exec oxlint src/
+
+echo "Pre-commit checks passed."

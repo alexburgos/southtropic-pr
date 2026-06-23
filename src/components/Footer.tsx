@@ -12,9 +12,12 @@ export function Footer() {
   }
 
   return (
-    <footer className={`text-white py-6 px-4 text-sm ${location.pathname === '/' ? 'fixed bottom-0 z-10 w-full' : ''}`}>
+    <footer
+      className={`text-white py-6 px-4 text-sm ${location.pathname === '/' ? 'fixed bottom-0 z-10 w-full' : ''}`}
+    >
       <div className="flex flex-row justify-between items-center gap-2 px-2">
         <button
+          type="button"
           onClick={toggleLanguage}
           className="px-4 py-2 cursor-pointer text-white font-medium text-sm uppercase tracking-wider transition-all duration-300 bg-white/10 border border-white/20 backdrop-blur-sm hover:bg-white/20 hover:border-white/40 md:bg-transparent md:border-none md:backdrop-blur-none self-start"
           aria-label="Toggle language"
@@ -22,7 +25,7 @@ export function Footer() {
           {i18n.language === 'en' ? 'Español' : 'English'}
         </button>
 
-        <div className="space-y-1 text-right md:text-right">
+        <div className="space-y-1 text-right md:text-right" data-nosnippet>
           <p>
             {t('footer.designedBy')}{' '}
             <a
@@ -58,4 +61,3 @@ export function Footer() {
     </footer>
   )
 }
-

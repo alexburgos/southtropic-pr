@@ -38,57 +38,64 @@
       "droneVisuals": {
         "title": "Drone Visuals",
         "features": {
-          "item1": "8 Drone Photos",
-          "item2": "10-second Reel with aerial visuals (Instagram)",
-          "item3": "1 Carousel Post",
-          "item4": "10-12 second Reel for TikTok and Instagram",
-          "item5": "4 Stories per day of collaboration"
+          "item1": "6 Edited Drone Photos",
+          "item2": "10-second Reel with aerial visuals (Instagram and TikTok)",
+          "item3": "3 Stories per day of collaboration"
         }
       },
       "basic": {
         "title": "Basic Package",
         "features": {
-          "item1": "15 professional photos with camera and drone",
-          "item2": "Lifestyle Reel with models or couple (subject to discussion)",
-          "item3": "Real Estate Reel",
-          "item4": "5 promotional stories per day",
-          "item5": "3 mini clips for promotion",
+          "item1": "12 professional photos with camera and drone",
+          "item2": "Lifestyle Reel with a model (subject to discussion)",
+          "item3": "Property Tour Reel (TikTok)",
+          "item4": "4 promotional stories per day",
+          "item5": "2 mini clips for promotion",
           "item6": "1 carousel post (permanent)"
         }
       },
       "full": {
         "title": "Full Package",
         "features": {
-          "item1": "30 professional photos with camera and drone",
-          "item2": "30-second professional video in 4K HD. (For commercial use)",
-          "item3": "1 Lifestyle Reel (15 seconds) posted in all my platforms.",
-          "item4": "1 Real Estate Reel posted on instagram.",
-          "item5": "$15 boost for reel/carousel.",
-          "item6": "Reel for YouTube Shorts and TikTok."
+          "item1": "20 professional photos with camera and drone (to be discussed)",
+          "item2": "30-second professional video in 4K HD",
+          "item3": "$10 boost in main reel",
+          "item4": "2 reels in all platforms: Instagram, YouTube Shorts and TikTok"
         }
       },
       "gold": {
         "title": "Gold Package",
         "features": {
-          "item1": "40 professional photos (camera and drone)",
-          "item2": "1-minute professional video in 4K HD",
-          "item3": "Voice Over Tour Reel (40 seconds)",
-          "item4": "$20 Boost for reel/carousel",
-          "item5": "10-second Reel for YouTube Shorts and TikTok",
-          "item6": "Unlimited promotion (posts, stories, recaps)"
+          "item1": "40 professional photos with camera and drone (to be discussed)",
+          "item2": "30-second professional video in 4K HD",
+          "item3": "Narrated Tour Reel (40 seconds)",
+          "item4": "1 Lifestyle Reel 8 to 12 seconds (Instagram Southtropic and Next Stop PR)",
+          "item5": "$20 Boost on reel/carousel",
+          "item6": "10-second Reel for YouTube Shorts and TikTok",
+          "item7": "Unlimited promotion (posts, stories, recaps)"
         }
       },
       "annual": {
         "title": "Annual Agreement",
-        "badge": "SAVE $200",
+        "badge": "YOU SAVE $250",
         "features": {
-          "item1": "3 annual visits to create exclusive content",
-          "item2": "15 professional photos and 2 reels per visit",
-          "item3": "Content delivered via Google Drive or secure link",
-          "item4": "Invoice provided as proof of purchase",
-          "item5": "30% deposit required to secure date (non-refundable)",
-          "item6": "Regular price: $1,750"
+          "item1": "3 visits to your property annually to create exclusive new content for commercial use",
+          "item2": "15 professional photos, 2 reels, 1 carousel per visit",
+          "item3": "Content delivered via Google Drive or other private and secure link",
+          "item4": "Invoice provided as evidence and to secure the dates",
+          "item5": "30% deposit required to secure the date or any changes",
+          "item6": "VIP access to Airbnb recaps reel and unlimited promotion",
+          "item7": "Regular price of this package: $2,250"
         }
+      }
+    },
+    "addons": {
+      "title": "Add-Ons",
+      "localExclusivity": {
+        "title": "Local Exclusivity Add-On",
+        "feeLabel": "6-Month Exclusivity Fee",
+        "description": "A 6-month exclusivity option is available for Airbnb, vacation rental, and hospitality brands within the same town or local market area.",
+        "detail": "This prevents collaborations with direct local competitors during the exclusivity term and allows your property to maintain priority positioning across my hospitality content."
       }
     },
     "getInTouch": "Get in Touch",
@@ -128,4 +135,3 @@
     "iconBy": "icon by"
   }
 }
-

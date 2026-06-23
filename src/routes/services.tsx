@@ -1,9 +1,117 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
+import type { FormEvent } from 'react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import type { FormEvent } from 'react'
+
+const PAGE_URL = 'https://stvisualspr.com/services'
+const PAGE_IMAGE = 'https://stvisualspr.com/images/services/overview.jpg'
+
+const serviceJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'SouthTropic Content Creation Services',
+  description:
+    'Professional photography, video, and drone content packages for luxury hotels, resorts, and travel brands in the Caribbean.',
+  url: PAGE_URL,
+  provider: {
+    '@type': 'Person',
+    name: 'Axel',
+    url: 'https://stvisualspr.com/about',
+  },
+  areaServed: 'Caribbean',
+  serviceType: 'Content Creation',
+  offers: [
+    {
+      '@type': 'Offer',
+      name: 'Drone Visuals Package',
+      price: '650',
+      priceCurrency: 'USD',
+      description: 'Drone photography and aerial video visuals package',
+    },
+    {
+      '@type': 'Offer',
+      name: 'Basic Package',
+      price: '850',
+      priceCurrency: 'USD',
+      description: 'Essential photography and video content package',
+    },
+    {
+      '@type': 'Offer',
+      name: 'Full Package',
+      price: '1200',
+      priceCurrency: 'USD',
+      description: 'Full photography, video, and drone content package',
+    },
+    {
+      '@type': 'Offer',
+      name: 'Gold Package',
+      price: '1550',
+      priceCurrency: 'USD',
+      description: 'Premium content creation package with unlimited promotion',
+    },
+    {
+      '@type': 'Offer',
+      name: 'Annual Agreement',
+      price: '2000',
+      priceCurrency: 'USD',
+      description:
+        'Annual content creation retainer — 3 property visits, photos, reels, and unlimited promotion',
+    },
+    {
+      '@type': 'Offer',
+      name: 'Local Exclusivity Add-On',
+      price: '3000',
+      priceCurrency: 'USD',
+      description:
+        '6-month exclusivity for Airbnb, vacation rental, and hospitality brands within the same local market area, preventing collaborations with direct local competitors.',
+    },
+  ],
+}
+
+const FEATURE_KEYS = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6', 'item7'] as const
+
+const PACKAGES = [
+  { key: 'droneVisuals', price: '$650', featureKeys: FEATURE_KEYS.slice(0, 3) },
+  { key: 'basic', price: '$850', featureKeys: FEATURE_KEYS.slice(0, 6) },
+  { key: 'full', price: '$1,200', featureKeys: FEATURE_KEYS.slice(0, 4) },
+  { key: 'gold', price: '$1,550', featureKeys: FEATURE_KEYS },
+  { key: 'annual', price: '$2,000', featureKeys: FEATURE_KEYS },
+] as const
 
 export const Route = createFileRoute('/services')({
+  head: () => ({
+    meta: [
+      { title: 'Services & Packages — SouthTropic' },
+      {
+        name: 'description',
+        content:
+          'Photography, video, and drone content packages for luxury hotels and resorts. Starting at $650. Serving the Caribbean.',
+      },
+      { property: 'og:title', content: 'Services & Packages — SouthTropic' },
+      {
+        property: 'og:description',
+        content:
+          'Photography, video, and drone content packages for luxury hotels and resorts. Starting at $650. Serving the Caribbean.',
+      },
+      { property: 'og:url', content: PAGE_URL },
+      { property: 'og:image', content: PAGE_IMAGE },
+      { name: 'twitter:title', content: 'Services & Packages — SouthTropic' },
+      {
+        name: 'twitter:description',
+        content:
+          'Photography, video, and drone content packages for luxury hotels and resorts. Starting at $650. Serving the Caribbean.',
+      },
+      { name: 'twitter:url', content: PAGE_URL },
+      { name: 'twitter:image', content: PAGE_IMAGE },
+    ],
+    links: [{ rel: 'canonical', href: PAGE_URL }],
+    scripts: [
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify(serviceJsonLd),
+      },
+    ],
+  }),
   component: ServicesPage,
 })
 
@@ -22,12 +130,12 @@ function ServicesPage() {
 
     const subject = encodeURIComponent(`Contact from ${formData.name}`)
     const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
     )
     const mailtoLink = `mailto:southtropicprvisuals@gmail.com?subject=${subject}&body=${body}`
-    
+
     window.location.href = mailtoLink
-    
+
     setTimeout(() => {
       setIsSubmitting(false)
       setFormData({ name: '', email: '', message: '' })
@@ -36,9 +144,15 @@ function ServicesPage() {
 
   return (
     <div className="min-h-screen bg-black text-white pb-20">
-      <link rel="preload" as="image" href="/images/services/overview.webp" type="image/webp" fetchPriority="high" />
+      <link
+        rel="preload"
+        as="image"
+        href="/images/services/overview.webp"
+        type="image/webp"
+        fetchPriority="high"
+      />
       <link rel="preload" as="image" href="/images/services/overview.jpg" fetchPriority="high" />
-      
+
       <div className="relative h-[30vh] md:h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-linear-to-b from-black/50 to-black" />
         <picture>
@@ -61,12 +175,14 @@ function ServicesPage() {
           <h2 className="text-3xl font-bold mb-6 text-center">{t('services.whatIOffer')}</h2>
           <div className="max-w-3xl mx-auto">
             <ul className="grid md:grid-cols-2 gap-3">
-              {Array.from({ length: 7 }, (_, i) => (
-                <li key={i} className="flex items-start gap-3 text-white/80">
-                  <span className="text-white/60 mt-1">✓</span>
-                  <span>{t(`services.servicesList.item${i + 1}`)}</span>
-                </li>
-              ))}
+              {(['item1', 'item2', 'item3', 'item4', 'item5', 'item6', 'item7'] as const).map(
+                (itemKey) => (
+                  <li key={itemKey} className="flex items-start gap-3 text-white/80">
+                    <span className="text-white/60 mt-1">✓</span>
+                    <span>{t(`services.servicesList.${itemKey}`)}</span>
+                  </li>
+                ),
+              )}
             </ul>
           </div>
         </div>
@@ -74,44 +190,63 @@ function ServicesPage() {
         <div className="mb-20">
           <h2 className="text-3xl font-bold mb-8 text-center">{t('services.contentPackages')}</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {['droneVisuals', 'basic', 'full', 'gold', 'annual'].map((pkgKey, index) => {
-              const prices = ['$500', '$650', '$850', '$1,000', '$1,550']
-              const featureCounts = [5, 6, 6, 6, 6]
-              
-              return (
-                <div
-                  key={pkgKey}
-                  className={`border border-white/10 p-8 hover:border-white/30 transition-colors relative ${
-                    pkgKey === 'annual' ? 'md:col-span-2 lg:col-span-1' : ''
-                  }`}
-                >
-                  {pkgKey === 'annual' && (
-                    <div className="absolute top-4 right-4 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1 rounded">
-                      {t(`services.packages.${pkgKey}.badge`)}
-                    </div>
-                  )}
-                  <h3 className="text-2xl font-bold mb-2">{t(`services.packages.${pkgKey}.title`)}</h3>
-                  <p className="text-3xl font-bold text-white/90 mb-6">{prices[index]}</p>
-                  <ul className="space-y-3">
-                    {Array.from({ length: featureCounts[index] }, (_, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-white/70">
-                        <span className="w-1.5 h-1.5 bg-white/60 rounded-full mt-1.5 shrink-0" />
-                        <span>{t(`services.packages.${pkgKey}.features.item${i + 1}`)}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )
-            })}
+            {PACKAGES.map(({ key: pkgKey, price, featureKeys }) => (
+              <div
+                key={pkgKey}
+                className={`border border-white/10 p-8 hover:border-white/30 transition-colors relative ${
+                  pkgKey === 'annual' ? 'md:col-span-2 lg:col-span-1' : ''
+                }`}
+              >
+                {pkgKey === 'annual' && (
+                  <div className="absolute top-4 right-4 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1 rounded">
+                    {t(`services.packages.${pkgKey}.badge`)}
+                  </div>
+                )}
+                <h3 className="text-2xl font-bold mb-2">
+                  {t(`services.packages.${pkgKey}.title`)}
+                </h3>
+                <p className="text-3xl font-bold text-white/90 mb-6">{price}</p>
+                <ul className="space-y-3">
+                  {featureKeys.map((featureKey) => (
+                    <li
+                      key={`${pkgKey}.features.${featureKey}`}
+                      className="flex items-start gap-2 text-sm text-white/70"
+                    >
+                      <span className="w-1.5 h-1.5 bg-white/60 rounded-full mt-1.5 shrink-0" />
+                      <span>{t(`services.packages.${pkgKey}.features.${featureKey}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-20">
+          <h2 className="text-3xl font-bold mb-8 text-center">{t('services.addons.title')}</h2>
+          <div className="border border-white/20 p-8 md:p-12 bg-white/[0.03]">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-6">
+              <div>
+                <h3 className="text-2xl font-bold mb-1">
+                  {t('services.addons.localExclusivity.title')}
+                </h3>
+                <p className="text-white/50 text-sm uppercase tracking-widest">
+                  {t('services.addons.localExclusivity.feeLabel')}
+                </p>
+              </div>
+              <p className="text-4xl font-bold text-white/90 shrink-0">$3,000</p>
+            </div>
+            <div className="space-y-4 text-white/70 leading-relaxed max-w-3xl">
+              <p>{t('services.addons.localExclusivity.description')}</p>
+              <p>{t('services.addons.localExclusivity.detail')}</p>
+            </div>
           </div>
         </div>
 
         <div id="contact-form" className="max-w-3xl mx-auto  pt-12 scroll-mt-20">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">{t('services.getInTouch')}</h2>
-            <p className="text-white/70 text-lg">
-              {t('services.getInTouchSubtitle')}
-            </p>
+            <p className="text-white/70 text-lg">{t('services.getInTouchSubtitle')}</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -171,7 +306,10 @@ function ServicesPage() {
 
           <div className="mt-8 text-center text-sm text-white/60">
             {t('services.termsNote')}{' '}
-            <Link to="/terms" className="text-white/80 hover:text-white transition-colors underline">
+            <Link
+              to="/terms"
+              className="text-white/80 hover:text-white transition-colors underline"
+            >
               {t('services.termsLink')}
             </Link>
           </div>
@@ -180,4 +318,3 @@ function ServicesPage() {
     </div>
   )
 }
-
